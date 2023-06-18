@@ -1,3 +1,8 @@
+// prime or not
+
+
+
+
 package First;
 
 public class Prime {
