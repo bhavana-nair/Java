@@ -1,0 +1,26 @@
+package First;
+
+public class arraySort {
+	public static void main(String args[]) {
+		int []arr= {312,44,614,118,10}	;
+		int a=0;
+		
+		for(int i=0; i<arr.length-1; i++) {	
+			
+			for(int j=i; j<arr.length; j++) {	
+				
+				if (arr[i]>arr[j] ) {
+					a=arr[i];
+					arr[i]=arr[j];
+					arr[j]=a;	
+				}
+				}	
+			}
+		
+		for(int i=0; i<arr.length; i++) {	
+			System.out.println(arr[i]);
+		}
+		
+		
+	}
+}
