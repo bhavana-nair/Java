@@ -1,0 +1,12 @@
+package First;
+
+public class forest {
+
+	public static void main(String args []) {
+		
+		animal ob = new animal();
+		System.out.print(ob.name);	
+	}
+	
+	
+}

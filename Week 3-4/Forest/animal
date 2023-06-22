@@ -1,0 +1,15 @@
+package First;
+
+public class animal {
+	
+	String name= "Dog";
+	String Category = "Domestic";
+	
+	
+	public static void main(String args []) {
+		
+		animal a= new animal();
+		
+		System.out.print(a.name);	
+	}
+}

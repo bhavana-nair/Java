@@ -1,0 +1,10 @@
+package First;
+
+public class employee {
+	public static void main(String args[]) {
+
+	person p= new person();	
+	System.out.println("Employee name is "+ p.name+ " and is "+p.age+ " years old, with an experience of "+ p.experience+" years.");
+		
+	}
+}

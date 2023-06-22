@@ -1,0 +1,8 @@
+package First;
+
+public class person {
+
+	String name = "Bhavana";
+	int age=25;
+	float experience = 2.5f;
+}
