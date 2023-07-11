@@ -1,0 +1,11 @@
+package First;
+
+public class child extends parent{
+	String name2= "Child";
+public static void main(String args []) {
+	
+child c= new child();
+System.out.println( "I am "+c.name+ " called from "+ c.name2);
+System.out.println( "I am "+c.name1+ " called from "+ c.name2);
+}
+}

@@ -1,0 +1,12 @@
+package First;
+
+public class parent extends grandParent {
+ 	
+	String name1= "Parent";
+
+	public static void main(String args []) {
+		
+		parent p= new parent();
+		System.out.println( "I am "+p.name+ " called from "+ p.name1);
+	}
+}

@@ -1,0 +1,15 @@
+package First;
+
+public class flower {
+	
+	String nameF = "Flower";
+	String name;
+	
+	public flower(String name1) {
+		name=name1;
+	}
+	
+	public void printName() {
+		System.out.println( "I am "+name+ " also a "+ nameF);
+	}
+}

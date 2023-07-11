@@ -1,0 +1,16 @@
+package First;
+
+public class rose extends flower {
+	//String nameR = "Rose";
+	rose(String nameR){
+		super(nameR);
+	}
+	
+public static void main(String args []) {
+		
+		rose r = new rose("ROSE");
+		//System.out.println( "I am "+r.name+ " also "+ r.nameF);
+		
+		r.printName();
+	}
+}
