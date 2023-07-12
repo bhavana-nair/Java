@@ -1,0 +1,14 @@
+package First;
+
+public class PersonParent {
+
+	String name;
+	int aadhar;
+	int basic;
+	
+	public PersonParent(String name,int aadhar, int basic) {
+		this.name=name;
+		this.aadhar=aadhar;
+		this.basic=basic;
+	}
+}

@@ -1,0 +1,24 @@
+package First;
+
+public class EmployeeChild extends PersonParent {
+
+	EmployeeChild(String n,int a,int b, int incentive, int pf){
+		super(n,a,b);
+		this.incentive=incentive;
+		this.pf=pf;
+	}
+	
+int incentive ;
+int pf;
+	
+	public float calcScale(int b, int i, int p) {
+		return b+ i+ (b*p)/100 ;
+	}
+	
+	public static void main(String args []) {
+		
+		EmployeeChild e= new EmployeeChild("Bhavana", 123456, 1000, 200, 12);
+		float total =e.calcScale(e.basic, e.incentive, e.pf);
+		System.out.println( "Total salary of "+ e.name+ " is "+ total);
+	}
+}

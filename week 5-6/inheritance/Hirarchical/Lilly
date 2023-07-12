@@ -7,13 +7,17 @@ public class Lilly extends flower {
 	}
 	
 public static void main(String args []) {
+
+    //accessing data via object variables
 		
 		Lilly l = new Lilly("LILLY");
 		System.out.println( "I am......... "+l.name+ " also a "+ l.nameF);
 		
 		rose r = new rose("ROSE");
 		System.out.println( "I am......... "+r.name+ " also a "+ r.nameF);
-		
+
+        
+	//accessing data via object method
 		l.printName();
 		r.printName();
 	}

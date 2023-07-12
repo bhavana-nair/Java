@@ -1,0 +1,18 @@
+package First;
+
+public class nestedFun {
+	public int addNumbers(int x, int y) {
+		return x+y;
+	}
+
+	public void printAns(int a, int b) {
+		int z= addNumbers(a,b);
+		System.out.println(z);
+	}
+	public static void main(String args[]) {
+		
+		nestedFun n=new nestedFun();
+		n.printAns(4,5);
+		
+	}
+}
