@@ -1,0 +1,33 @@
+package Second;
+
+public class Conversion {
+
+	public void convertTemperature(double celsius) {
+		double f= (celsius*1.8)+32;
+		System.out.println("Temperature in Farenheat: " +f);
+	}
+	
+	public void convertTemperature(double celsius, String scale) {
+		
+		if (scale=="F") {
+			convertTemperature(celsius);
+		}
+		else if (scale=="K") {
+			double k= celsius+273.15;
+			System.out.println("Temperature in Kelvin: " +k);
+		}
+		else {
+			System.out.println("Invalid Scale");
+		}
+	}
+	
+	public static void main(String args []) {
+		Conversion c= new Conversion();
+		c.convertTemperature(100);
+		c.convertTemperature(100, "F");
+		c.convertTemperature(100, "K");
+		c.convertTemperature(100, "M");
+	}
+	
+	
+}

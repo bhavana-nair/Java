@@ -1,0 +1,33 @@
+package Second;
+
+public class Child_C extends Parent_P{
+
+	Child_C(String n,int a,int b, int incentive, int pf){
+		super(n,a,b);
+		this.incentive=incentive;
+		this.pf=pf;
+	}
+	
+	int incentive ;
+	int pf;
+		
+	public void printDetails() {
+		System.out.println("I AM CALLED FROM CHILD");
+		System.out.println("Details of "+ super.name);
+		System.out.println("INCENTIVE: " +incentive);
+		System.out.println("PF: " +pf);
+		System.out.println();
+		
+		super.printDetails();
+		
+	}
+	
+public static void main(String args []) {
+		
+	Child_C e= new Child_C ("Bhavana", 123456, 10000, 200, 12);
+		
+		e.printDetails();
+		
+	}
+
+}

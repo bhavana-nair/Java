@@ -1,0 +1,17 @@
+package Second;
+
+public class BankAcccount {
+
+	int accountNumber;
+	int balance; 
+	
+	
+	public BankAcccount(int a, int b) {
+		this.accountNumber=a;
+		this.balance=b;
+	}
+	
+	public void withdraw(int w) {
+		balance=balance-w;
+	}
+}

@@ -1,0 +1,28 @@
+package Second;
+
+public class Child2 extends Parent_P{
+	
+	Child2(String n,int a,int b, int incentive, int pf){
+		super(n,a,b);
+		this.incentive=incentive;
+		this.pf=pf;
+	}
+	int incentive;
+	int pf;
+	
+	public void ShowDetails(String name,int aadhar, int basic, int incentive,int pf) {
+		System.out.println("I AM CALLED FROM CHILD");
+		System.out.println(name);
+		System.out.println(aadhar);
+		System.out.println(basic);
+		System.out.println(incentive);
+		System.out.println(pf);
+	}
+	
+public static void main(String args []) {
+		
+	Child2 e= new Child2 ("Bhavana", 123456, 10000, 200, 12);
+		e.ShowDetails("Bhavana", 123456, 10000, 200, 12);
+		e.ShowDetails("Bhavana", 123456, 10000);
+}
+}

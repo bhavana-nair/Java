@@ -1,0 +1,29 @@
+package Second;
+
+public class Parent_P {
+
+	String name;
+	int aadhar;
+	int basic;
+	
+	public Parent_P(String name,int aadhar, int basic) {
+		this.name=name;
+		this.aadhar=aadhar;
+		this.basic=basic;
+	}
+	
+	public void printDetails() {
+		System.out.println("I AM CALLED FROM PARENT");
+		System.out.println("NAME: " +name);
+		System.out.println("AADHAR: " +aadhar);
+		System.out.println("BASIC SALARY: " +basic);
+	}
+	
+	public void ShowDetails(String name,int aadhar, int basic) {
+		System.out.println("I AM CALLED FROM PARENT");
+		System.out.println("NAME: " +name);
+		System.out.println("AADHAR: " +aadhar);
+		System.out.println("BASIC SALARY: " +basic);
+	}
+	
+}

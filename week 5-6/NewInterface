@@ -1,0 +1,21 @@
+package First;
+ 
+interface Interface1{
+	
+	int findSum( int x, int y);
+}
+
+public class NewInterface implements Interface1 {
+
+	 public int findSum(int x, int y) {
+		 return x+y;
+	 }
+
+public static void main(String args []) {
+	
+	Interface1 n= new NewInterface();
+	int a=n.findSum(30, 4);
+	System.out.println(a);
+	
+}
+}

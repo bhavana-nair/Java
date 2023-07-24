@@ -1,0 +1,22 @@
+package Second;
+
+public class SavingsAccount extends BankAcccount {
+	float interestRate;
+	public SavingsAccount(int a, int b, float i) {
+		super(a,b);
+		this.interestRate= 7;
+	}
+
+	public float calculateInterest() {
+			return (balance*interestRate)/100;
+	}
+	
+	public static void main(String args []) {
+		SavingsAccount s= new SavingsAccount(123456, 1000,7);
+		s.withdraw(100);
+		System.out.println( "New balance is: "+ s.balance);
+		float interestEarned = s.calculateInterest();
+		System.out.println( "Interest Earned is: "+ interestEarned);
+	}
+	
+}
