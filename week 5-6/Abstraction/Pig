@@ -1,0 +1,16 @@
+package Second;
+
+public class Pig extends Animal{
+
+	//void makeSound() {
+		
+		//System.out.println("Pig says Hiiiii"); 
+	//}
+	
+	public static void main(String args []) {
+		
+		Pig e= new Pig ();
+e.sleepSound();
+e.makeSound();
+	}
+}

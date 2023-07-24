@@ -1,0 +1,11 @@
+package Second;
+
+abstract class Animal {
+	
+	String name;
+	void makeSound() {
+	}
+	void sleepSound() {
+		System.out.println("Zzz"); 
+	}
+}
