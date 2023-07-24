@@ -3,8 +3,7 @@ package Second;
 abstract class Animal {
 	
 	String name;
-	void makeSound() {
-	}
+	abstract void makeSound();
 	void sleepSound() {
 		System.out.println("Zzz"); 
 	}

@@ -1,0 +1,29 @@
+package First;
+ 
+interface Interface1{	
+	int findSum( int x, int y);
+}
+
+interface Interface2{	
+	void printSum(int p, int q);
+}
+
+public class NewInterface implements Interface1, Interface2{
+
+	 public int findSum(int x, int y) {
+		 return x+y;
+	 }
+	 
+	 public void printSum(int p, int q) {
+		 int a=findSum(p,q);
+			System.out.println(a);
+	 }
+
+public static void main(String args []) {
+	
+	NewInterface n= new NewInterface();
+	n.printSum(30, 4);
+	n.findSum(30, 4);
+
+}
+}
