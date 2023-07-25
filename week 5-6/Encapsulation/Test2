@@ -1,0 +1,24 @@
+
+package Second;
+
+public class Test2 extends AccessModifiers{
+
+	
+	public static void main(String args[]){
+		
+		//WORKING IN CHILD OBJECT IN SAME PACKAGE
+		
+		Test2 m = new Test2();
+		
+		System.out.println(m.a);
+		//ERROR// System.out.println(m.b);
+		System.out.println(m.c);
+		
+		m.publicAccessModifier();
+		//protected modifier accessed within child object
+		m.protectedAccessModifier();
+		
+		//ERROR // m.privateAccessModifier();
+	}
+	
+}

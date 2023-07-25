@@ -1,0 +1,29 @@
+package Package;
+
+import Second.AccessModifiers;
+
+public class Test4 extends AccessModifiers{
+
+	public static void main(String args[]){
+		
+		//WORKING IN PARENT OBJECT IN DIFFERENT PACKAGE
+		
+		AccessModifiers n = new AccessModifiers();
+		n.publicAccessModifier();
+		//Can not access Protected from parent class object
+		//ERROR//n.protectedAccessModifier();
+		
+		
+		//WORKING IN CHILD OBJECT IN DIFFERENT PACKAGE
+		
+		Test4 m = new Test4();
+		
+		System.out.println(m.a);
+		//ERROR// System.out.println(m.b);
+		System.out.println(m.c);
+		
+		//Can access Protected from child class object
+		m.protectedAccessModifier();
+			}
+	
+}

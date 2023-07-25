@@ -1,0 +1,25 @@
+
+package Second;
+
+public class AccessModifiers {
+	public String a = "PUBLIC";
+	private String b = "PRIVATE";
+	protected String c = "PROTECTED";
+	
+	public void publicAccessModifier() {
+		System.out.println("Hello I AM "+a); 
+	}
+	
+	private void privateAccessModifier() {
+		System.out.println("Hello I AM "+b); 
+	}
+
+	protected void protectedAccessModifier() {
+		System.out.println("Hello I AM "+c); 
+	}
+	
+	public static void main(String args[]){
+		AccessModifiers a= new AccessModifiers();
+		a.privateAccessModifier();
+	}
+}

@@ -1,0 +1,30 @@
+package Pack;
+
+public class SimpleStartupGame {
+	
+	public static void main(String args[]){
+		int noGuess=0;
+		GameHelper helper = new GameHelper();
+		SimpleStartup s=new SimpleStartup();
+		s.setLocations(); 
+		
+		
+		boolean isAlive = true;
+		while(isAlive) {
+			
+			int guess=helper.getUserInput("enter no:");
+			String result =s.checkYourself(guess);
+			noGuess++;
+			
+			if(result== " KILL") {
+				isAlive=false;
+				System.out.println("no of guess is "+ noGuess); 
+				
+			}
+			
+		}
+			
+	}
+	
+	
+}

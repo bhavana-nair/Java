@@ -1,0 +1,37 @@
+package Pack;
+import java.util.Random;
+
+public class SimpleStartup {
+
+	int[] locationCells = new int[3];
+	int nOfHits=0;
+	
+	public void setLocations() {
+
+		Random rand = new Random();
+		int a = rand.nextInt(10); 
+		locationCells[0]=(int) a;
+		locationCells[1]=(int) a+1;
+		locationCells[2]=(int) a+2;
+	}
+	
+	public String checkYourself(int guess) {
+		String result = "MISS";
+		for ( int cell : locationCells){
+			if (cell== guess){
+				
+				result= " HIT";
+				nOfHits++;
+				break;
+				}
+		}
+			if(nOfHits==3) {
+				result= " KILL";
+				
+			}
+		System.out.println(result); 
+		return result;
+		
+	}
+	
+}

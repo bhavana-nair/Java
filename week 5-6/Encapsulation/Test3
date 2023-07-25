@@ -1,0 +1,15 @@
+package Package;
+
+import Second.AccessModifiers;
+
+public class Test3 {
+
+	public static void main(String args[]){
+		AccessModifiers n = new AccessModifiers();
+		n.publicAccessModifier();
+		//protected modifier accessed outside the package without a child
+		//ERROR//n.protectedAccessModifier();
+			}
+	
+}
+
