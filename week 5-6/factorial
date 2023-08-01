@@ -1,0 +1,22 @@
+package Second;
+
+public class factorial {
+
+	public int findfactorial(int n) {
+	
+		int r=1;
+		int m =n;
+		while(m>1) {
+			r= n*findfactorial(n-1);
+			m=m-1;
+		}
+		return r;
+	}
+	
+	public static void main(String args []) {
+		int ans=0;
+		factorial f = new factorial();
+		ans= f.findfactorial(4);
+		System.out.println(ans); 
+	}
+}

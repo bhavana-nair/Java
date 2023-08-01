@@ -1,0 +1,28 @@
+import java.util.Arrays;
+
+class Solution {
+    public char findTheDifference(String s, String t) {
+        
+ char a[] = s.toCharArray();
+ char b[] = t.toCharArray();
+char z=0;
+Arrays.sort(a);
+Arrays.sort(b);
+
+boolean f=false;
+for (int i=0; i<a.length; i++){
+if (a[i]!=b[i]){
+    f=true;
+    z= b[i];
+    break;
+}
+    }
+
+if (f==false){
+    z= b[b.length-1];
+}
+
+return z;
+    }
+    
+}
