@@ -1,0 +1,33 @@
+package Second;
+
+public class ExceptionHandling {
+	
+	public int division(int a, int b) {
+		return a/b;
+	}
+	
+	
+	
+public static void main(String args[]) {
+	ExceptionHandling e= new ExceptionHandling();
+	
+	try {
+	int[] arr = {1,5,2,1};
+	for (int i: arr) {
+		
+		if(i==5 ) {
+			throw new ArithmeticException("Invalid");
+		}
+		int x=e.division(10, i);
+		System.out.println(x);
+	}
+	
+	}
+	
+	//catch(ArithmeticException g){System.out.println(g);}
+	
+	finally {
+		System.out.println("DONE");
+	}
+}
+}

@@ -1,0 +1,25 @@
+
+public class exceptionTest {
+	public void test2()throws ArithmeticException {
+		System.out.println("no exception");
+		}
+
+	public void test()throws ArithmeticException{
+		throw new ArithmeticException("device error");
+	}
+	
+	public void test1() {
+		test();
+	}
+
+
+
+
+public static void main(String args[]) {
+	exceptionTest e= new exceptionTest();
+	e.test2();
+	e.test();
+	e.test1();
+
+}
+}
